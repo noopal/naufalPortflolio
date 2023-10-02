@@ -1,0 +1,27 @@
+GET http://localhost:5000/users
+
+###
+GET http://localhost:5000/users/1
+
+###
+POST http://localhost:5000/users
+Content-Type: application/json
+
+{
+  "name": "Naufal",
+  "email": "naufal@mail.com",
+  "jenisKelamin": "laki-laki"
+}
+
+###
+PATCH  http://localhost:5000/users/2
+Content-Type: application/json
+
+{
+  "name": "Wiwi",
+  "email": "wiwi@mail.com",
+  "jenisKelamin": "perempuan"
+}
+
+###
+DELETE   http://localhost:5000/users/3
